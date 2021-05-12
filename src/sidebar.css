@@ -1,0 +1,210 @@
+p {
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: black;
+}
+
+button,
+button:hover,
+button:focus {
+    display: block;
+  background-color: inherit;
+  color: white;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background:#2c292f;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #2c292f;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li button {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li button:hover {
+    color:#2c292f;
+    background: #ddd;
+}
+
+#sidebar ul button.active {
+    color: #fff;
+    background: #4CAF50;
+}
+
+button[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul button {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background:#2c292f;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+.alertNotification img {
+    height: 100px;
+    width: 750px;
+    margin: 15px 0px;
+}
+
+.symptomsImagesContainer img {
+    height: 200px;
+    margin: 15px 50px 20px 50px;
+    float: left;
+}
+
+.card {
+    background-color: #cce5e9!important;
+    padding: 10px 15px;
+    width: 1000px;
+}
+
+.card .cardBody {
+    font-size: 14px;
+    border-top: 1px solid black;
+}
+
+.iframeContainer{
+    margin: 0 auto;
+    width: 550px;
+}
+
+.articles {
+    height: 600px;
+    overflow-y: scroll;
+}
+    .articleContainer{
+        width: 680px;
+        margin-bottom: 30px;
+    }
+        .articleContainer .articleHead{
+            padding: 10px;
+            background-color:lightyellow;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            border: 1px solid grey; 
+        }
+        .articleContainer .articleBody {
+            height: 300px;
+        }
+
+.news {
+    height: 600px;
+    overflow-y: scroll;
+    width: 340px;
+}
+    .newsContainer{
+        margin-bottom: 15px;
+    }
+        .newsContainer .newsHead{
+            padding: 5px;
+            background-color:lightyellow;
+            color: black;
+            font-weight: bold;
+            font-size: 12px;  
+            border-radius: 5px 5px 0px 0px;
+        }
+        .newsContainer .newsBody {
+            height: 150px;
+        }
+
+.tableStats {
+    height: 600px;
+    overflow-y: scroll;
+}
